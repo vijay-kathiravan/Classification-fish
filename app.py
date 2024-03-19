@@ -37,9 +37,9 @@ def predict():
     #output = prediction[0]
 
     # Return result
-    return render_template('index.html', prediction_text=f'Species Predicted: {prediction_list}')
+    #return render_template('index.html', prediction_text=f'Species Predicted: {prediction_list}')
 
-    #return render_template("index.html", prediction=prediction_list)
+    return render_template("index.html", prediction=prediction_list)
 
 if __name__ == "__main__":
     app.run(debug=True)  # Remove debug=True before deployment
